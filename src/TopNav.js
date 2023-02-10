@@ -18,14 +18,15 @@ export default function TopNav() {
     }
 
     return (
-        <div>
+        <div className='top--dropdown'>
             <h1 className="text">Choose your weapon type</h1>
             <select
-            onChange={handleChange}
-            value={gunFamily}
-            >
-                {iron.map(type => <option>{type}</option>)}
+                onChange={handleChange}
+                value={gunFamily}
+            >       
+            {iron.map(type => <option>{type}</option>)}
             </select>
+
             {gunFamily === "Assault Rifles" && <AR/>}
             {gunFamily === "Battle Rifles" && <BR />}
             {gunFamily === "Shotguns" && <Shotgun />}

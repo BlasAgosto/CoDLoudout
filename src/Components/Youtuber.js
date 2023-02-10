@@ -1,5 +1,4 @@
 import React from "react"
-import image from '../Pics/logo.png'
 import sniperArr from './images.js'
 
 export default function Youtuber(props){
@@ -10,11 +9,9 @@ export default function Youtuber(props){
         const {value} = event.target
         setTube(value)
     }
-
-    console.log(sniperArr[1])
-
+    
     return (
-        <div>
+        <div className='yt--dropdown'>
             <h1 className="text">Choose your 'Tuber</h1>
             <select
             onChange={handleChange}

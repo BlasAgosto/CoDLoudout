@@ -5,8 +5,8 @@ import TopNav from './TopNav';
 function App() {
   return (
     <>
-    <div className="logo">
-      <img src={logo} alt='Cod Loadouts'/>
+    <div className="app--logo">
+      <img  src={logo} alt='Cod Loadouts'/>
     </div>
     <TopNav />
 

@@ -20,6 +20,36 @@ code {
 
 }
 
+.app--logo {
+  display: flex;
+  justify-content: center;
+}
 .text {
-  color: white
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown {
+    text-align-last:center;
+    direction: rtl;
+    width :100%;
+}
+
+.yt--dropdown {
+  text-align-last:center;
+  direction: rtl;
+  width :100%;
+}
+
+.top--dropdown {
+  text-align-last:center;
+  padding-right: 29px;
+  direction: rtl;
+  width :100%;
+}
+
+select {
+  width: 10%;
+  text-align: center;
 }

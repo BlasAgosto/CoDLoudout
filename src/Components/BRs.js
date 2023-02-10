@@ -6,14 +6,14 @@ export default function BR() {
     const guns = ['--','LACHMANN-762','S0-14','TAQ-V','FTAC RECON']
 
     function handleChange(event){
-        const {name, value, checked, type} = event.target
+        const {value} = event.target
 
         setWeapon(value)
     }
 
     return (
         <div className="dropdown">
-            <h1 className="text">BRs</h1>
+            <h1 className="text">Battle Rifles</h1>
             <select
             value = {weapon}
             onChange={handleChange}

@@ -10,7 +10,6 @@ export default function Sniper() {
         setWeapon(value)
     }
     return (
-
         <div className="dropdown">
             <h1 className="text">Snipers</h1>
             <select
