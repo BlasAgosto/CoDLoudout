@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
@@ -16,28 +17,9 @@ code {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  /* border: 2px red solid; */
+
 }
 
-.Nav-lis {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-#dropdown-content {
-  position: absolute;
-  top: 12%; /* top value is the height of the button element */
-  /* display: none; */
-}
-
-#dropdown-button:hover + #dropdown-content {
-  display: block;
-}
-
-#weapons {
-  list-style-type: none;
-}
-
-.dropdown {
-  list-style-type: none;
+.text {
+  color: white
 }

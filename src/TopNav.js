@@ -19,7 +19,7 @@ export default function TopNav() {
 
     return (
         <div>
-            <h1>Choose your weapon type</h1>
+            <h1 className="text">Choose your weapon type</h1>
             <select
             onChange={handleChange}
             value={gunFamily}

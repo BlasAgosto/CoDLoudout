@@ -1,4 +1,5 @@
 import React from "react";
+import Tuber from './Youtuber'
 
 export default function BR() {
     const [weapon, setWeapon] = React.useState([])
@@ -12,13 +13,16 @@ export default function BR() {
 
     return (
         <div className="dropdown">
-            <h1>BRs</h1>
+            <h1 className="text">BRs</h1>
             <select
             value = {weapon}
             onChange={handleChange}
             >
             {guns.map(gun => <option>{gun}</option>)}
             </select>
+            <Tuber 
+            weapon={weapon}
+            />
         </div>
     )
 } 

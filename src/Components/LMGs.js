@@ -1,4 +1,5 @@
 import React from "react";
+import Tuber from './Youtuber'
 
 export default function LMG() {
     const [weapon, setWeapon] = React.useState([])
@@ -12,13 +13,16 @@ export default function LMG() {
     return (
 
         <div className="dropdown">
-            <h1>LMGs</h1>
+            <h1 className="text">LMGs</h1>
             <select
             onChange={handleChange}
             value={weapon}
             >
                 {guns.map(opt => <option>{opt}</option>)}
             </select>
+            <Tuber 
+            weapon={weapon}
+            />
         </div>
     )
 }

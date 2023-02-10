@@ -1,4 +1,5 @@
 import React from "react";
+import Tuber from './Youtuber.js'
 
 export default function Sniper() {
     const [weapon, setWeapon] = React.useState([])
@@ -6,18 +7,21 @@ export default function Sniper() {
 
     function handleChange(event){
         const {value} = event.target
-        setWeapon(weapon)
+        setWeapon(value)
     }
     return (
 
         <div className="dropdown">
-            <h1>Snipers</h1>
+            <h1 className="text">Snipers</h1>
             <select
             onChange={handleChange}
             value={weapon}
             >
                 {guns.map(gun => <option>{gun}</option>)}
             </select>
+            <Tuber 
+            weapon={weapon}
+            />
         </div>
     )
 }

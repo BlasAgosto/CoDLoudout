@@ -1,5 +1,6 @@
 import React from "react";
 import image from '../Pics/logo.png'
+import Tuber from './Youtuber'
 
 export default function AR() {
     const [weapon, setWeapon] = React.useState([])
@@ -12,7 +13,7 @@ export default function AR() {
 
     return (
         <div className="dropdown">
-            <h1>ARs</h1>
+            <h1 className="text">ARs</h1>
             <select
             value={weapon}
             onChange={handleChange}
@@ -20,6 +21,9 @@ export default function AR() {
                {guns.map(gun=> <option>{gun}</option>)} 
             </select>
             {weapon === "M4" && <img src={image}/>}
+            <Tuber 
+            weapon={weapon}
+            />
         </div>
     )
 }
