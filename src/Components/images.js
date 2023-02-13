@@ -10,10 +10,10 @@ import BASP from '../Pics/basp.png'
 import Bryson800 from '../Pics/bryson800.png'
 import Bryson890 from '../Pics/bryson890.png'
 import Chimera from '../Pics/chimera.png'
-import Erb14 from '../Pics/erb.png'
-import Expidite12 from '../Pics/expidite.png'
+import Erb14 from '../Pics/erb14.png'
+import Expidite12 from '../Pics/expidite12.png'
 import Fennec45 from '../Pics/fennec45.png'
-import FssHuricane from '../Pics/fsshuricane.png'
+import FssHuricane from '../Pics/fsshurricane.png'
 import FtacRecon from '../Pics/ftacrecon.png'
 import HRC56 from '../Pics/hcr56.png'
 import Kastov74u from '../Pics/kastov74u.png'
@@ -27,7 +27,7 @@ import Lockwood300 from '../Pics/lockwood300.png'
 import LockwoodMk2 from '../Pics/lockwoodmk2.png'
 import M4 from '../Pics/M4.png'
 import M13B from '../Pics/m13b.png'
-import M16 from '../Pics/m16.png'
+import M16 from '../Pics/M16.png'
 import Minibank from '../Pics/minibank.png'
 import MX9 from '../Pics/mx9.png'
 import P890 from '../Pics/p890.png'
@@ -63,7 +63,6 @@ export default [
     Chimera,
     Erb14,
     Expidite12,
-    Fennec45,
     Fennec45,
     FssHuricane,
     FtacRecon,
