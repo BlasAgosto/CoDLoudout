@@ -1,4 +1,3 @@
-
 import logo from './Pics/logo.png'
 import TopNav from './TopNav';
 
@@ -9,7 +8,6 @@ function App() {
       <img  src={logo} alt='Cod Loadouts'/>
     </div>
     <TopNav />
-
     </>
   );
 }

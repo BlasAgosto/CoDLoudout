@@ -12,7 +12,7 @@ export default function Youtuber(props){
     
     return (
         <div className='yt--dropdown'>
-            <h1 className="text">Choose your 'Tuber</h1>
+            <h1 className="text">Choose your YouTuber</h1>
             <select
             onChange={handleChange}
             value={tube}

@@ -1,6 +1,6 @@
 import React from "react";
-import image from '../Pics/logo.png'
 import Tuber from './Youtuber'
+import YTVid from "./YTVid";
 
 export default function AR() {
     const [weapon, setWeapon] = React.useState('')
@@ -20,8 +20,10 @@ export default function AR() {
             >
                {guns.map(gun=> <option key={gun}>{gun}</option>)} 
             </select>
-            {weapon === "M4" && <img src={image}/>}
             <Tuber 
+            weapon={weapon}
+            />
+            <YTVid 
             weapon={weapon}
             />
         </div>
