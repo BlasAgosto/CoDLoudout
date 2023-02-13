@@ -2,7 +2,7 @@ import React from "react";
 import Tuber from './Youtuber'
 
 export default function Handgun() {
-    const [weapon, setWeapon] = React.useState([])
+    const [weapon, setWeapon] = React.useState('')
     const guns = ['--', 'P890','.50 GS','X12','BASILISK','X13 AUTO']
 
     function handleChange(event){
@@ -18,7 +18,7 @@ export default function Handgun() {
             onChange={handleChange}
             value={weapon}
             >
-                {guns.map(gun => <option>{gun}</option>)}
+                {guns.map(gun => <option key={gun}>{gun}</option>)}
             </select>
             <Tuber 
             weapon={weapon}

@@ -2,7 +2,7 @@ import React from "react"
 import sniperArr from './images.js'
 
 export default function Youtuber(props){
-    const [tube, setTube] = React.useState([])
+    const [tube, setTube] = React.useState('')
     const tuber = ['--', 'Hero']
 
     function handleChange(event){
@@ -18,7 +18,7 @@ export default function Youtuber(props){
             value={tube}
             id="tuber"
             >
-            {tuber.map(yt => <option>{yt}</option>)}
+            {tuber.map(yt => <option key={yt}>{yt}</option>)}
             </select>
             <br />
             <br />

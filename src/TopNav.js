@@ -9,7 +9,7 @@ import Marksman from './Components/Marksman';
 import Handgun from './Components/Handguns';
 
 export default function TopNav() {
-    const [gunFamily, setGunFamily] = React.useState([])
+    const [gunFamily, setGunFamily] = React.useState('')
     const iron = ['-- Choose --', 'Assault Rifles', 'Battle Rifles', 'Shotguns', 'SMGs', 'LMGs', 'Snipers', 'Marksman Rifles', 'Handguns']
 
     function handleChange(event){
@@ -24,7 +24,7 @@ export default function TopNav() {
                 onChange={handleChange}
                 value={gunFamily}
             >       
-            {iron.map(type => <option>{type}</option>)}
+            {iron.map(type => <option key={type}>{type}</option>)}
             </select>
 
             {gunFamily === "Assault Rifles" && <AR/>}
