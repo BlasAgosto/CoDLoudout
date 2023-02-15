@@ -1,5 +1,6 @@
 import React from "react";
 import Tuber from './Youtuber.js'
+import YTVid from "./YTVid";
 
 export default function SMG() {
     const [weapon, setWeapon] = React.useState('')
@@ -22,6 +23,9 @@ export default function SMG() {
             </select>
             <br />
             <Tuber 
+            weapon={weapon}
+            />
+            <YTVid 
             weapon={weapon}
             />
         </div>

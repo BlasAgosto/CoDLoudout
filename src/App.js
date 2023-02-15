@@ -1,11 +1,11 @@
-import logo from './Pics/logo.png'
+import logo from './Pics/codlogo.PNG'
 import TopNav from './TopNav';
 
 function App() {
   return (
     <>
     <div className="app--logo">
-      <img  src={logo} alt='Cod Loadouts'/>
+      <img className="banner" src={logo} alt='Cod Loadouts'/>
     </div>
     <TopNav />
     </>

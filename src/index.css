@@ -28,6 +28,7 @@ code {
   color: white;
   display: flex;
   justify-content: center;
+  margin: 2px;
 }
 
 .dropdown {
@@ -67,4 +68,20 @@ select {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.video {
+  position: absolute;
+  top: 2%;
+  width:30%;
+  height: 25%;
+}
+
+.yt--pic {
+  width: 80%;
+  height: auto;
+}
+
+.banner {
+  width:45%;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Tuber from './Youtuber'
+import YTVid from "./YTVid";
 
 export default function LMG() {
     const [weapon, setWeapon] = React.useState('')
@@ -21,6 +22,9 @@ export default function LMG() {
                 {guns.map(opt => <option key={opt}>{opt}</option>)}
             </select>
             <Tuber 
+            weapon={weapon}
+            />
+            <YTVid 
             weapon={weapon}
             />
         </div>
